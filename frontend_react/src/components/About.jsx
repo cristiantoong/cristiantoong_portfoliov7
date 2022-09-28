@@ -68,7 +68,7 @@ function About() {
                       return (
                         <div key={index}>
                           <Accordion
-                            onClick={() => toggleAccordion(index)}
+                            // onClick={() => toggleAccordion(index)}
                             ref={refs.current[index]}
                           >
                             {item.title ? item.title : ""}
@@ -196,8 +196,8 @@ const AccordionContent = styled.div`
   border-bottom: 2px solid #fff;
   margin-bottom: 2rem;
   /* initially removes the height of content  */
-  max-height: 0;
-  overflow: hidden;
+  /* max-height: 2rem; */
+  /* overflow: hidden; */
 
   /* Animation when opening accordion */
   transition: max-height 0.2s ease-in-out;
@@ -211,7 +211,7 @@ const AccordionContent = styled.div`
     }
   }
 
-  /* p:last-child {
+  p:last-child {
     margin-bottom: 30px !important;
-  } */
+  }
 `;

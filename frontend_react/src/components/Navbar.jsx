@@ -139,6 +139,11 @@ function Navbar() {
                   to={item.link}
                   onClick={closeMobileMenu}
                   key={index}
+                  smooth={true}
+                  duration={200}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
                 >
                   {item.title}
                 </MobileLinks>
@@ -279,8 +284,9 @@ const Menus = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const MobileLinks = styled(Link)`
+const MobileLinks = styled(LinkScroll)`
   font-size: 2rem;
   margin-bottom: 2rem;
   text-decoration: none;
+  cursor: pointer;
 `;

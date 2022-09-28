@@ -43,7 +43,7 @@ function Hero() {
                   <LinkScroll
                     to={item.ctaBtnLink}
                     smooth={true}
-                    duration={500}
+                    duration={200}
                     spy={true}
                     exact="true"
                     offset={-80}
